@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: Styles and Selectors</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        li{
+            text-decoration: none;
+            display: inline;
+        }
+        
+    </style>
+</head>
+<body>
+    <header style="height: 60px; background-color: black;">
+        <nav style="height: 60px; background-color: pink;" class="head">
+<img src="https://p1.hiclipart.com/preview/671/495/634/travel-icons-infographic-tourism-international-tourism-text-circle-logo-label-png-clipart.jpg" style="filter: brightness(1.1); margin-left: 15px;">
+<div class="list">
+    <ul style="text-decoration: none; color: #282828; font-family: serifris;">
+        <li class="li"><a  href="https://www.india.gov.in/topics/travel-toum" target="_blank">Destinations</li>
+        <li class="li"><a href="https://www.india.gov.in/topics/travel-tourism" target="_blank">
+Holiday Ideas</li>
+        <li class="li"><a href="https://www.india.gov.in/topics/travel-tourism" target="_blank">Packages</li>
+        <li class="li"><a href="https://www.india.gov.in/topics/travel-tourism" target="_blank">Places to Stay </li>
+        <li class="li"> <a href="https://www.india.gov.in/topics/travel-tourism" target="_blank">Weekand Gateways</li>
+
+    </ul>
+</div>
+        </nav>
+    </header><div class="main">
+        <div class="form_container"><form  style="background-color: rgb(241, 219, 191); color: rgb(133, 110, 75); ">
+            <fieldset >
+                <legend> Travel Registration Form</legend>
+                <h4>Name</h4>
+                <input type="text" placeholder="First"> <input type="text" placeholder="Last">
+                <h4>Country</h4>
+                <select>
+                    <option>Please select a country</option>
+                    <optgroup label="Asia">
+    <option>India</option>
+    <option>Sri Lanka<option>
+    <option>Saudi Arabia</option>
+    <option>U.A.E</option>
+    <option>China</option>             </optgroup>
+                </select>
+                <h4>Email</h4>
+                <input type="email" required="">
+                <h4>Phone</h4>
+                <input type="number" required="" placeholder="### ### ####">
+                <h4>What is the best way to contact you</h4>
+                <pre>Email   <input type="checkbox" value="e"></pre>
+                <pre>Phone   <input type="checkbox" value="p"></pre>
+                <pre>Eeither <input type="checkbox" value="b"></pre>
+                <h4>Date of Birth</h4>
+                <input type="date" placeholder="DD/MM/YY">
+                <h4>Will you be requird any of the following</h4>
+                <pre>              Yes                       NO</pre>
+                <pre>Chaperone           <input type="radio" value="yes">                       <input type="radio" value="no"></pre>
+                <pre>Special seating     <input type="radio" value="yes">                       <input type="radio" value="no"></pre>
+                <pre>Special diet        <input type="radio" value="yes">                       <input type="radio" value="no"></pre>
+                <pre>Handicapped
+Accomodation        <input type="radio" value="yes">                       <input type="radio" value="no"></pre>
+                <pre>Other               <input type="radio" value="yes">                       <input type="radio" value="no"></pre>    
+            <h4>Questions/Comments</h3><br>
+            <textarea name="q/c"  cols="30" rows="10"></textarea>  
+    
+            </fieldset>
+        </form></div>
+    </body>
+    
+    </html> 
+</body>
+</html>
+/* Using Universal Selectors */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-boxs;
+    overflow:hidden ;
+}
+/* Using Class Selectors */
+.main{
+    background-color: green;
+    display: flex;
+}
+.form_container{
+    background-color: red;
+    margin-left: 740px;
+    margin-top: 111px;
+    width: 500px;
+    text-align: center;
+}
+.head{
+    display: flex;
+}
+.list{
+    display: flex;
+    align-items: center;
+.li{
+    margin-left: 17px;
+text-decoration: none;
+color: black;}
